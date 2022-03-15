@@ -1,0 +1,131 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    background-color: blueviolet;
+    color: white;
+    font-family: 'monospace', Times, serif;
+    line-height: 1.69;
+    margin-bottom: 100px;
+}
+
+button {
+    border: none;
+    color: black;
+    font-family: inherit;
+    font-size: inherit;
+    cursor:crosshair;
+    outline: none;
+}
+
+/*main calculator section */
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.calculator {
+    width: 400px;
+    border: 2px #333 solid;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(45, 0, 104);
+}
+
+.screen {
+    padding: 10px 20px;
+    border: 2px #333 solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: rgba(177, 177, 177, 0.699);
+    text-align: right;
+    word-wrap:break-word;
+    word-break: break-all;
+}
+
+.screenLast {
+    min-height: 32px;
+    font-size: 20px;
+}
+
+.screenCurrent {
+    min-height: 64px;
+    font-size: 40px;
+}
+
+.btnGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.btn {
+    padding: 20px;
+    border: 2px #333 solid;
+    border-radius: 9px;
+    background-color: rgba(238, 238, 238, 0.281);
+}
+
+.btn:hover {
+    background-color: blueviolet;
+}
+.btn:active {
+    background-color: blue;
+}
+
+.btn-orange {
+    background-color: orange;
+}
+
+.btn-orange:hover {
+    background-color: chartreuse;
+}
+
+.btn-orange:active {
+    background-color: red;
+}
+
+.btn-brown {
+    background-color: rgb(165, 42, 42);
+}
+
+.btn-brown:hover {
+    background-color: chocolate;
+}
+
+.btn-brown:active {
+    background-color: red;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
